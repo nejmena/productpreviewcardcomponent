@@ -143,7 +143,7 @@ h4 {
         
     }
     .product-image {
-        content: url(https://github.com/nejmena/productpreviewcardcomponent/blob/6f68a1e693da314e47ab0ee9b3bec4e3824f0fe4/image-product-mobile.jpg);
+        content: url(./images/image-product-mobile.jpg);
         height: auto;
         width: 100%; 
         border-top-left-radius: 10px;
