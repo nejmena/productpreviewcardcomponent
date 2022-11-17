@@ -1,0 +1,168 @@
+body {
+    margin: 0 auto;
+    background-color: hsl(30, 38%, 92%);
+    width: 100%;
+    height: 100%;
+}
+
+/* CONTAINER */
+.container {
+    height: 450px;
+    width: 600px;
+    margin: 100px auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* IMAGE */
+.image {
+    width: 50%;
+    height: 100%;
+    margin: 0;
+}
+.product-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    object-fit: fill;
+}
+
+/* INFO */
+.info {
+    padding: 0 20px;
+    background-color: hsl(0, 0%, 100%);
+    width: 50%;
+    height: 100%;
+    margin: 0;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    box-sizing: border-box;
+}
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 15px;
+    margin-top: 30px;
+}
+h2, p, .past-price{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+}
+h1 {
+    font-family: 'Fraunces';
+    font-weight: 700;
+    color: hsl(212, 21%, 14%);
+    font-size: 40px;
+    margin: 0;
+    line-height: 35px;
+}
+p {
+    font-size: 14px;
+    padding-right: 40px;
+    
+}
+.product-description {
+    line-height: 23px;;
+}
+.price {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.present-price {
+    font-family: 'Fraunces';
+    font-weight: 700; 
+    color: hsl(158, 36%, 37%);
+    font-size: 40px;
+    padding-right: 10px;
+}
+.past-price {
+    text-decoration: line-through;
+    padding-left: 15px;
+}
+.cart {
+    color:  hsl(0, 0%, 100%);
+    font-family: 'Montserrat';
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 10px;
+    text-align: center;
+    padding: 16px 50px;
+    margin: 20px 0;
+   justify-content: center;  
+    width: 62%;  
+    
+}
+.cart:hover {
+    cursor: pointer;
+    background-color: hsl(212, 21%, 14%);
+}
+
+/* FOOTER */
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+/* MEDIA QUERY */
+@media only screen and (max-width: 375px) {
+    .container {
+        flex-direction: column;
+        height: 600px;
+        width: 340px;
+        margin: 20px auto;
+        
+    }
+    .image {
+        width: 100%;
+        height: 40%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px; 
+        border-bottom-left-radius: 0%;
+        border-bottom-right-radius: 0%;
+        
+        
+    }
+    .product-image {
+        content: url(./images/image-product-mobile.jpg);
+        height: auto;
+        width: 100%; 
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px; 
+        border-bottom-left-radius: 0%;
+        border-bottom-right-radius: 0%;
+        object-fit: contain;
+    }
+    .info {
+        height: 60%;
+        width: 100%; 
+        border-top-right-radius: 0%;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    h2 {
+        margin-top: 20px;
+    }
+    h1 {
+        font-size: 35px;
+    }
+    p {
+        padding-right: 10px;
+    }
+    .present-price {
+        font-size: 35px;
+    }
+    .cart {
+        margin-top: 10px;
+        width: 67%;
+    }
+    }
